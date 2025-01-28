@@ -1,66 +1,41 @@
-# 📝 Interview Preparation Checklist
+# 🚀 Java DSA Intensive Study Plan (2 Weeks)
 
-## 📚 Table of Contents
-1. [Arrays](#1-arrays)
-2. [Strings](#2-strings)
-3. [Linked Lists](#3-linked-lists)
-4. [Stacks and Queues](#4-stacks-and-queues)
-5. [Trees](#5-trees)
-6. [Graphs](#6-graphs)
-7. [Dynamic Programming](#7-dynamic-programming)
-8. [Backtracking](#8-backtracking)
-9. [Sorting and Searching](#9-sorting-and-searching)
-10. [Bit Manipulation](#10-bit-manipulation)
+A structured 2-week plan to master Data Structures and Algorithms (DSA) using Java, with daily practice on LeetCode. Designed for efficiency and clarity, with code examples and curated problem sets.
 
 ---
 
-<details>
-<summary><strong>1. Arrays</strong></summary>
+## 📅 **Weekly Schedule**
 
-### Easy Problems
-- [ ] [Two Sum](https://leetcode.com/problems/two-sum/)
-- [ ] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
-- [ ] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
-- [ ] [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
-- [ ] [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
-- [ ] [Move Zeroes](https://leetcode.com/problems/move-zeroes/)
-- [ ] [Rotate Array](https://leetcode.com/problems/rotate-array/)
-- [ ] [Plus One](https://leetcode.com/problems/plus-one/)
-- [ ] [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
-- [ ] [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)
-- [ ] [Single Number](https://leetcode.com/problems/single-number/)
-- [ ] [Majority Element](https://leetcode.com/problems/majority-element/)
-- [ ] [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)
-- [ ] [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)
-- [ ] [Rotate Image](https://leetcode.com/problems/rotate-image/)
+### **Week 1: Core Data Structures**
 
-### Medium Problems
-- [ ] [3Sum](https://leetcode.com/problems/3sum/)
-- [ ] [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
-- [ ] [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
-- [ ] [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
-- [ ] [Word Search](https://leetcode.com/problems/word-search/)
+| Day | Topic                | Key Concepts                                                                 | Practice Problems                                                                                                                                 |
+|-----|----------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1   | **Arrays & Strings** | Sliding window, two-pointer technique, `StringBuilder`                      | [Reverse String](https://leetcode.com/problems/reverse-string/), [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) |
+| 2   | **Linked Lists**     | Dummy nodes, fast/slow pointers                                             | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/), [Detect Cycle](https://leetcode.com/problems/linked-list-cycle/)           |
+| 3   | **Stacks & Queues**  | Monotonic stacks, `Deque`                                                   | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/), [Min Stack](https://leetcode.com/problems/min-stack/)                           |
+| 4   | **Hash Tables**      | `HashMap`, frequency counting                                               | [Two Sum](https://leetcode.com/problems/two-sum/), [Group Anagrams](https://leetcode.com/problems/group-anagrams/)                                     |
+| 5-6 | **Trees & BSTs**     | BFS/DFS traversal, BST validation                                           | [Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/), [Validate BST](https://leetcode.com/problems/validate-binary-search-tree/) |
 
-### Hard Problems
-- [ ] [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
-- [ ] [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
-- [ ] [First Missing Positive](https://leetcode.com/problems/first-missing-positive/)
-- [ ] [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
-- [ ] [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
+---
 
-### Notes
-- **Two Pointer Technique**: Useful for problems involving sorted arrays or finding pairs.
-- **Sliding Window**: Great for problems involving subarrays or substrings.
-- **Hash Maps**: Efficient for counting occurrences or finding duplicates.
+### **Week 2: Algorithms & Advanced Topics**
 
-```typescript
-function twoSum(nums: number[], target: number): number[] {
-    let left = 0, right = nums.length - 1;
-    while (left < right) {
-        const sum = nums[left] + nums[right];
-        if (sum === target) return [left, right];
-        else if (sum < target) left++;
-        else right--;
-    }
-    return [];
-}
+| Day | Topic                  | Key Concepts                                                                 | Practice Problems                                                                                                                                 |
+|-----|------------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| 7   | **Sorting & Searching**| MergeSort, Binary Search                                                    | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/), [Find First/Last Position](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) |
+| 8   | **Recursion & Backtracking** | Permutations, subsets                                                  | [Permutations](https://leetcode.com/problems/permutations/), [Subsets](https://leetcode.com/problems/subsets/)                                       |
+| 9   | **Dynamic Programming**| Memoization, tabulation                                                     | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/), [Coin Change](https://leetcode.com/problems/coin-change/)                           |
+| 10  | **Graphs**             | BFS/DFS, adjacency lists                                                    | [Number of Islands](https://leetcode.com/problems/number-of-islands/), [Clone Graph](https://leetcode.com/problems/clone-graph/)                       |
+| 11  | **Greedy & Bit Manipulation** | XOR tricks, greedy intuition                                          | [Single Number](https://leetcode.com/problems/single-number/), [Jump Game](https://leetcode.com/problems/jump-game/)                                   |
+| 12-13 | **Mock Interviews**   | Timed practice (45 mins/problem)                                            | [LRU Cache](https://leetcode.com/problems/lru-cache/), [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) |
+| 14  | **Review & Refine**    | Focus on weaknesses                                                         | Revisit challenging problems from previous days.                                                                                                   |
+
+---
+
+## 🛠️ **Java-Specific Tips**
+- Use `StringBuilder` instead of `String` for concatenation in loops.
+- Avoid autoboxing (e.g., `Integer` ↔ `int`) in performance-critical code.
+- Prefer `ArrayList` over raw arrays for dynamic resizing.
+- Learn custom sorting with `Comparator`:
+  ```java
+  Arrays.sort(intervals, (a, b) -> a[0] - b[0]); // Sort 2D array by start time
